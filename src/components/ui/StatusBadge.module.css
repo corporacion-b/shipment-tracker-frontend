@@ -1,0 +1,12 @@
+.badge {
+  display: inline-flex;
+  min-height: 26px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0 var(--space-3);
+  background: color-mix(in srgb, var(--status-color) 14%, white);
+  color: var(--status-color);
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+}

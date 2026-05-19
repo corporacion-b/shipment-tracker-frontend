@@ -1,0 +1,64 @@
+.page {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.header h1 {
+  margin: var(--space-2) 0 0;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.05;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.backLink:hover {
+  color: var(--color-primary);
+}
+
+.detailWrap {
+  width: 100%;
+}
+
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  background: var(--color-background);
+}
+
+.loading {
+  color: var(--color-text-secondary);
+}
+
+.error {
+  color: var(--status-cancelled);
+  font-weight: 700;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
