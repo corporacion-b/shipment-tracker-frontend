@@ -1,4 +1,4 @@
-import { LogOut, MapPinned, PackageSearch, Table2 } from "lucide-react";
+import { Bell, LogOut, MapPinned, PackageSearch, Table2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { useAuth } from "../../providers/AuthProvider";
 import packageImage from "../../public/Paquete.jpeg";
@@ -26,6 +26,10 @@ export function AppShell() {
           <NavLink to="/orders" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}>
             <Table2 size={18} />
             Pedidos
+          </NavLink>
+          <NavLink to="/notifications" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}>
+            <Bell size={18} />
+            Notificaciones
           </NavLink>
         </nav>
 

@@ -109,6 +109,14 @@
   font-weight: 600;
 }
 
+.success {
+  margin: 0;
+  color: var(--status-delivered);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .passwordInput {
   position: relative;
 }
@@ -187,6 +195,23 @@
   text-underline-offset: 4px;
 }
 
+.inlineAction {
+  width: fit-content;
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding: 0;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.inlineAction:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .registerButton {
   display: inline-flex;
   width: 100%;
@@ -211,6 +236,29 @@
   background: rgba(255, 240, 232, 0.7);
   color: var(--color-primary-hover);
   transform: translateY(-1px);
+}
+
+.checkEmailPanel {
+  display: grid;
+  gap: var(--space-5);
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.checkEmailPanel p {
+  margin: 0;
+}
+
+.checkIcon {
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border: 1px solid rgba(244, 81, 11, 0.22);
+  border-radius: 18px;
+  background: rgba(255, 240, 232, 0.78);
+  color: var(--color-primary);
+  box-shadow: 0 14px 30px rgba(244, 81, 11, 0.16);
 }
 
 .spinner {
