@@ -1,0 +1,35 @@
+.page {
+  display: grid;
+  min-height: calc(100vh - (var(--space-6) * 2));
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+}
+
+.content {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.image {
+  width: min(520px, 78vw);
+  height: auto;
+  object-fit: contain;
+}
+
+.content h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.1;
+}
+
+@media (max-width: 860px) {
+  .page {
+    min-height: calc(100vh - 220px);
+  }
+}
